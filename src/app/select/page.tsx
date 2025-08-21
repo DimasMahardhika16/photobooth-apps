@@ -1,6 +1,14 @@
 "use client";
 
-import { Container, Box, Flex, Title, Image, Button } from "@mantine/core";
+import {
+  Container,
+  Box,
+  Flex,
+  Title,
+  Image,
+  Button,
+  Center,
+} from "@mantine/core";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -46,7 +54,9 @@ export default function SelectPage() {
           <Title fz="h3" mb={4}>
             Preview Strip Foto
           </Title>
-          {/* <Image src="/" alt="Preview Strip" /> */}
+          <Center>
+            <Image src={stripFinal} alt="Preview Strip" w={500} />
+          </Center>
           <Flex gap={10} justify="center" mt={20}>
             <Button
               variant="filled"
